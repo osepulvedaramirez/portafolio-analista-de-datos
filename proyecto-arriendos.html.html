@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Proyecto: Dashboard de Arriendos RM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header (Se mantiene igual en todas las páginas para consistencia) -->
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/tu-foto.jpg" alt="Foto de Oscar Sepulveda" /></a>
+				<h1><strong>Soy Oscar Sepulveda</strong></h1>
+				<p>Analista de Datos | Entusiasta en Visualización y Business Intelligence.</p>
+			</div>
+		</header>
+
+		<!-- Main (Contenido específico del proyecto) -->
+		<div id="main">
+
+			<!-- Sección Única del Proyecto -->
+			<section id="one">
+				<header class="major">
+					<h2>Estudio de Caso: Dashboard de Arriendos en la RM</h2>
+					<p>Una herramienta interactiva para el análisis del mercado inmobiliario.</p>
+				</header>
+				
+				<!-- Dashboard Incrustado de Render -->
+				<p>A continuación se presenta el dashboard interactivo. **Nota:** puede tardar hasta 50 segundos en cargar la primera vez, ya que utiliza un servidor gratuito de Render que se "duerme" por inactividad.</p>
+				
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-12"><span class="image fit">
+							<!-- ¡IMPORTANTE! Reemplaza esta URL con la tuya de Render -->
+							<iframe src="https://dashboard-julio-2025-rm.onrender.com" style="width:100%; height:650px; border:1px solid #ddd; border-radius: 4px;"></iframe>
+						</span></div>
+					</div>
+				</div>
+
+				<h3>1. Objetivo del Proyecto</h3>
+				<p>El objetivo de este proyecto era crear una herramienta intuitiva para que potenciales arrendatarios pudieran entender las tendencias de precios en diferentes comunas de la Region Metropolitana. El desafío principal era consolidar y limpiar datos de diversas fuentes, manejar información geoespacial y presentar los resultados en una interfaz interactiva y fácil de usar.</p>
+				
+				<h3>2. Proceso y Desafíos Técnicos</h3>
+				<p>El flujo de trabajo incluyó varias etapas clave:</p>
+				<ul>
+					<li><strong>Limpieza y Estandarización de Datos:</strong> Se utilizó la librería <strong>Pandas</strong> en Python para procesar un archivo de texto con más de 1000 registros, manejando inconsistencias como valores monetarios mixtos (CLP y UF).</li>
+					<li><strong>Análisis Geoespacial:</strong> Se utilizó <strong>GeoPandas</strong> para cargar, filtrar y normalizar un shapefile de las comunas de Chile, asegurando una unión correcta con los datos de arriendo mediante la estandarización de nombres.</li>
+                    <li><strong>Desarrollo del Dashboard:</strong> La interfaz fue construida con <strong>Dash</strong> y <strong>Plotly Express</strong>, implementando callbacks encadenados para crear una experiencia de filtrado inteligente, donde las opciones de "Baños" se actualizan según los "Dormitorios" seleccionados.</li>
+					<li><strong>Despliegue:</strong> La aplicación fue contenerizada con <strong>Docker</strong> para gestionar las dependencias del sistema (GDAL) y desplegada en la nube a través de <strong>Render</strong> para su acceso público.</li>
+				</ul>
+				
+                <hr />
+
+				<ul class="actions">
+					<li><a href="index.html" class="button">Volver al Portafolio</a></li>
+					<li><a href="[URL a tu repo de GitHub para este proyecto]" class="button primary icon solid fa-code">Ver Código en GitHub</a></li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- Footer (Se mantiene igual en todas las páginas) -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/osepulved/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/osepulvedaramirez" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="mailto:osepulveda.r@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Oscar Sepulveda 2025. Todos los derechos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
