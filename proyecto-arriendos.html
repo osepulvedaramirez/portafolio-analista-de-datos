@@ -6,10 +6,27 @@
 -->
 <html>
 	<head>
-		<title>Proyecto: Dashboard de Arriendos RM</title>
+		<title>Proyecto: Dashboard de Arriendos RM - Oscar Sepulveda</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- === CÓDIGO DE CORRECCIÓN PARA INTERACTIVIDAD === -->
+		<style>
+			/* Esta regla asegura que todos los elementos dentro del contenido principal
+			   puedan recibir clics y eventos del mouse. */
+			#main * {
+				pointer-events: auto !important;
+				z-index: 1;
+			}
+			/* Esta regla pone el iframe en una capa superior para garantizar
+			   que nada lo bloquee. */
+			iframe {
+				z-index: 2 !important;
+			}
+		</style>
+		<!-- ============================================= -->
+
 	</head>
 	<body class="is-preload">
 
@@ -32,25 +49,24 @@
 					<p>Una herramienta interactiva para el análisis del mercado inmobiliario.</p>
 				</header>
 				
-				<!-- Dashboard Incrustado de Render -->
 				<p>A continuación se presenta el dashboard interactivo. **Nota:** puede tardar hasta 50 segundos en cargar la primera vez, ya que utiliza un servidor gratuito de Render que se "duerme" por inactividad.</p>
 				
+				<!-- Dashboard Incrustado de Render -->
 				<div class="box alt">
 					<div class="row gtr-50 gtr-uniform">
 						<div class="col-12"><span class="image fit">
-							<!-- ¡IMPORTANTE! Reemplaza esta URL con la tuya de Render -->
-							<iframe src="https://dashboard-julio-2025-rm-xxmn.onrender.com" style="width:100%; height:650px; border:1px solid #ddd; border-radius: 4px; pointer-events: auto;"></iframe>
+							<!-- ¡IMPORTANTE! Asegúrate que esta sea tu URL correcta de Render -->
+							<iframe src="https://dashboard-julio-2025-rm.onrender.com" style="width:100%; height:650px; border:1px solid #ddd; border-radius: 4px;"></iframe>
 						</span></div>
 					</div>
 				</div>
 
 				<h3>1. Objetivo del Proyecto</h3>
-				<p>El objetivo de este proyecto era crear una herramienta intuitiva para que potenciales arrendatarios pudieran entender las tendencias de precios en diferentes comunas de la Region Metropolitana. El desafío principal era consolidar y limpiar datos de diversas fuentes, manejar información geoespacial y presentar los resultados en una interfaz interactiva y fácil de usar.</p>
+				<p>El objetivo de este proyecto era crear una herramienta intuitiva para que potenciales arrendatarios o inversionistas pudieran entender las tendencias de precios en diferentes comunas de Santiago. El desafío principal era consolidar y limpiar datos de diversas fuentes, manejar información geoespacial y presentar los resultados en una interfaz interactiva y fácil de usar.</p>
 				
 				<h3>2. Proceso y Desafíos Técnicos</h3>
-				<p>El flujo de trabajo incluyó varias etapas clave:</p>
 				<ul>
-					<li><strong>Limpieza y Estandarización de Datos:</strong> Se utilizó la librería <strong>Pandas</strong> en Python para procesar un archivo de texto con más de 1000 registros, manejando inconsistencias como valores monetarios mixtos (CLP y UF).</li>
+					<li><strong>Limpieza de Datos:</strong> Se utilizó la librería <strong>Pandas</strong> en Python para procesar un archivo de texto con más de 1000 registros, manejando inconsistencias como valores monetarios mixtos (CLP y UF) y múltiples formatos numéricos.</li>
 					<li><strong>Análisis Geoespacial:</strong> Se utilizó <strong>GeoPandas</strong> para cargar, filtrar y normalizar un shapefile de las comunas de Chile, asegurando una unión correcta con los datos de arriendo mediante la estandarización de nombres.</li>
                     <li><strong>Desarrollo del Dashboard:</strong> La interfaz fue construida con <strong>Dash</strong> y <strong>Plotly Express</strong>, implementando callbacks encadenados para crear una experiencia de filtrado inteligente, donde las opciones de "Baños" se actualizan según los "Dormitorios" seleccionados.</li>
 					<li><strong>Despliegue:</strong> La aplicación fue contenerizada con <strong>Docker</strong> para gestionar las dependencias del sistema (GDAL) y desplegada en la nube a través de <strong>Render</strong> para su acceso público.</li>
