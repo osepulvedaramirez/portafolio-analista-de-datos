@@ -5,10 +5,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.image::before, .image::after {
+				pointer-events: none;
+			}
+			iframe {
+				pointer-events: auto;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header (Se mantiene igual en todas las páginas para consistencia) -->
+		<!-- Header -->
 		<header id="header">
 			<div class="inner">
 				<a href="index.html" class="image avatar"><img src="images/tu-foto.jpg" alt="Foto de Oscar Sepulveda" /></a>
@@ -17,10 +25,10 @@
 			</div>
 		</header>
 
-		<!-- Main (Contenido específico del proyecto) -->
+		<!-- Main -->
 		<div id="main">
 
-			<!-- Sección Única del Proyecto -->
+			<!-- One -->
 			<section id="one">
 				<header class="major">
 					<h2>Estudio de Caso: Dashboard de Arriendos en la RM</h2>
@@ -36,7 +44,6 @@
 					</div>
 				</div>
 				
-				<!-- NUEVA NOTA AL PIE DEL GRÁFICO -->
 				<p style="text-align: center; font-style: italic; font-size: 0.9em; color: #777;">*El gráfico dinámico puede tardar hasta dos minutos en cargar.</p>
 
 				<h3>1. Objetivo del Proyecto</h3>
@@ -59,7 +66,7 @@
 
 		</div>
 
-		<!-- Footer (Se mantiene igual en todas las páginas) -->
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
