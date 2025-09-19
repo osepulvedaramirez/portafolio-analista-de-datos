@@ -5,28 +5,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<!-- === CÓDIGO DE CORRECCIÓN DEFINITIVO PARA INTERACTIVIDAD === -->
-		<style>
-			/* 
-			   Esta regla le dice a la capa invisible (pseudo-elemento) que la plantilla
-			   pone sobre los elementos con la clase '.image' que ignore los clics del mouse,
-			   permitiendo que pasen al contenido de abajo.
-			*/
-			.image::before, .image::after {
-				pointer-events: none;
-			}
-			
-			/*
-			   Esta regla asegura explícitamente que nuestro iframe SÍ sea interactivo
-			   y pueda recibir clics y eventos del mouse.
-			*/
-			iframe {
-				pointer-events: auto;
-			}
-		</style>
-		<!-- ======================================================== -->
-
 	</head>
 	<body class="is-preload">
 
@@ -49,8 +27,6 @@
 					<p>Una herramienta interactiva para el análisis del mercado inmobiliario.</p>
 				</header>
 				
-				<p>A continuación se presenta el dashboard interactivo. **Nota:** puede tardar hasta 50 segundos en cargar la primera vez, ya que utiliza un servidor gratuito de Render que se "duerme" por inactividad.</p>
-				
 				<!-- Dashboard Incrustado de Render -->
 				<div class="box alt">
 					<div class="row gtr-50 gtr-uniform">
@@ -59,16 +35,18 @@
 						</span></div>
 					</div>
 				</div>
+				
+				<!-- NUEVA NOTA AL PIE DEL GRÁFICO -->
+				<p style="text-align: center; font-style: italic; font-size: 0.9em; color: #777;">*El gráfico dinámico puede tardar hasta dos minutos en cargar.</p>
 
 				<h3>1. Objetivo del Proyecto</h3>
-				<p>El objetivo de este proyecto era crear una herramienta intuitiva para que potenciales arrendatarios o inversionistas pudieran entender las tendencias de precios en diferentes comunas de Santiago. El desafío principal era consolidar y limpiar datos de diversas fuentes, manejar información geoespacial y presentar los resultados en una interfaz interactiva y fácil de usar.</p>
+				<p>El fin de este proyecto es crear una herramienta intuitiva para que potenciales arrendatarios puedan visualizar las tendencias de precios de distintas comunas de la región Metropolitana.</p>
 				
 				<h3>2. Proceso y Desafíos Técnicos</h3>
 				<ul>
-					<li><strong>Limpieza de Datos:</strong> Se utilizó la librería <strong>Pandas</strong> en Python para procesar un archivo de texto con más de 1000 registros, manejando inconsistencias como valores monetarios mixtos (CLP y UF) y múltiples formatos numéricos.</li>
-					<li><strong>Análisis Geoespacial:</strong> Se utilizó <strong>GeoPandas</strong> para cargar, filtrar y normalizar un shapefile de las comunas de Chile, asegurando una unión correcta con los datos de arriendo mediante la estandarización de nombres.</li>
-                    <li><strong>Desarrollo del Dashboard:</strong> La interfaz fue construida con <strong>Dash</strong> y <strong>Plotly Express</strong>, implementando callbacks encadenados para crear una experiencia de filtrado inteligente, donde las opciones de "Baños" se actualizan según los "Dormitorios" seleccionados.</li>
-					<li><strong>Despliegue:</strong> La aplicación fue contenerizada con <strong>Docker</strong> para gestionar las dependencias del sistema (GDAL) y desplegada en la nube a través de <strong>Render</strong> para su acceso público.</li>
+					<li><strong>Limpieza de Datos:</strong> Se utilizo librería Pandas en Python para procesar la extracción de datos obtenidos en un archivo de texto con más de 10.000 datos de arriendo de 10 comunas de la región metropolitana, manejando inconsistencia en el formato y de los valores monetarios en CLP y UF.</li>
+					<li><strong>Análisis Geoespacial:</strong> Se utilizo GeoPandas para cargar, filtrar y normalizar un shapefile de las comunas de Chile, asegurando que la lista de nombres aparezca en el mapa.</li>
+					<li><strong>Despliegue:</strong> La aplicación fue contenerizada con Docker para gestionar las dependencias del sistema (GDAL) y desplegada en la nube a través de Render para su acceso público.</li>
 				</ul>
 				
                 <hr />
