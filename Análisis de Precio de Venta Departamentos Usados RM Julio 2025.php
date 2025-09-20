@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Proyecto: Análisis de Precio de Venta Departamentos Usados RM Julio 2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/tu-foto.jpg" alt="Foto de Oscar Sepulveda" /></a>
+				<h1><strong>Soy Oscar Sepulveda</strong></h1>
+				<p>Analista de Datos | Entusiasta en Visualización y Business Intelligence.</p>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one">
+				<header class="major">
+					<h2>Estudio de Caso: Dashboard de Precios de Venta en la RM</h2>
+					<p>Un análisis interactivo del mercado inmobiliario construido en Tableau.</p>
+				</header>
+				
+				<p>A continuación se presenta un dashboard interactivo creado en Tableau Public. Permite explorar la relación entre precio, superficie y ubicación de más de 17,000 propiedades usadas en la Región Metropolitana.</p>
+				
+				<!-- DASHBOARD DE TABLEAU INCRUSTADO -->
+				<div class="box alt">
+					<div class='tableauPlaceholder' id='viz1758397738027' style='position: relative; width: 100%;'>
+						<noscript>
+							<a href='#'>
+								<img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DashboardPreciosDepartamentosUsadosRM&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+							</a>
+						</noscript>
+						<object class='tableauViz'  style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='site_root' value='' />
+							<param name='name' value='DashboardPreciosDepartamentosUsadosRM&#47;Dashboard1' />
+							<param name='tabs' value='no' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DashboardPreciosDepartamentosUsadosRM&#47;Dashboard1&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+							<param name='language' value='es-ES' />
+						</object>
+					</div>
+					<script type='text/javascript'>
+						var divElement = document.getElementById('viz1758397738027');
+						var vizElement = divElement.getElementsByTagName('object')[0];
+						vizElement.style.width = '100%';
+						vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+						var scriptElement = document.createElement('script');
+						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+						vizElement.parentNode.insertBefore(scriptElement, vizElement);
+					</script>
+				</div>
+				
+				<h3>1. Objetivo del Proyecto</h3>
+				<p>El objetivo de este proyecto era demostrar la capacidad de analizar un gran conjunto de datos y presentar los hallazgos de forma clara e interactiva utilizando una herramienta líder de Business Intelligence como Tableau. Se buscaba responder preguntas clave sobre la concentración de la oferta, la relación precio-superficie y el ranking de valor por comuna.</p>
+				
+				<h3>2. Proceso y Desafíos Técnicos</h3>
+				<ul>
+					<li><strong>Preparación de Datos:</strong> Se realizó una limpieza exhaustiva de más de 17,000 registros en Excel, corrigiendo errores de tipeo y unificando precios a UF para asegurar la calidad y consistencia de los datos.</li>
+					<li><strong>Desarrollo en Tableau:</strong> Se construyeron tres visualizaciones interconectadas (mapa, gráfico de dispersión y gráfico de barras) que se combinaron en un dashboard final. Se utilizaron filtros y acciones para permitir una exploración dinámica por parte del usuario.</li>
+					<li><strong>Publicación:</strong> El dashboard final fue publicado en Tableau Public para generar un enlace compartible y un código de inserción para su integración en este portafolio.</li>
+				</ul>
+				
+                <hr />
+
+				<ul class="actions">
+					<li><a href="index.html" class="button">Volver al Portafolio</a></li>
+					<li><a href="https://public.tableau.com/app/profile/oscar.sepulveda.ramirez/viz/DashboardPreciosDepartamentosUsadosRM/Dashboard1" class="button primary icon solid fa-chart-bar" target="_blank" rel="noopener noreferrer">Ver en Tableau Public</a></li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/osepulved/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/osepulvedaramirez" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+					<li><a href="mailto:osepulveda.r@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Oscar Sepulveda 2025. Todos los derechos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
