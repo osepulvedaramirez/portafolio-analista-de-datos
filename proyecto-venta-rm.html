@@ -23,13 +23,13 @@
 			<!-- One -->
 			<section id="one">
 				<header class="major">
-					<h2>Estudio de Caso: Análisis de Precio de Venta Departamentos Usados RM</h2>
+					<h2>Análisis de Precio de Venta Departamentos Usados RM</h2>
 					<p>Un dashboard interactivo en Tableau para explorar el mercado inmobiliario.</p>
 				</header>
 				
-				<p>Este dashboard fue creado en Tableau Public para analizar el mercado de venta de departamentos usados en la Región Metropolitana (Julio 2025). Permite explorar la relación entre precio, superficie y ubicación de más de 17,000 propiedades.</p>
+				<p>Este dashboard fue creado en Tableau Public para analizar el mercado de venta de departamentos usados en la Región Metropolitana (Julio 2025). Permite explorar la relación entre precio, superficie de más de 14,000 propiedades.</p>
 				
-				<!-- DASHBOARD DE TABLEAU INCRUSTADO (CON SCRIPT CORREGIDO) -->
+				<!-- DASHBOARD DE TABLEAU INCRUSTADO -->
 				<div class="box alt">
 					<div class='tableauPlaceholder' id='viz1758467630034' style='position: relative; width: 100%;'>
 						<noscript>
@@ -54,10 +54,8 @@
 					<script type='text/javascript'>
 						var divElement = document.getElementById('viz1758467630034');
 						var vizElement = divElement.getElementsByTagName('object')[0];
-						// --- LÍNEA MODIFICADA PARA UN TAMAÑO ADAPTABLE ---
 						vizElement.style.width = '100%';
-						vizElement.style.height = (divElement.offsetWidth * 0.7) + 'px'; // Puedes ajustar el 0.7
-						// ---------------------------------------------
+						vizElement.style.height = (divElement.offsetWidth * 0.7) + 'px';
 						var scriptElement = document.createElement('script');
 						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 						vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -65,12 +63,12 @@
 				</div>
 				
 				<h3>1. Objetivo del Proyecto</h3>
-				<p>El objetivo de este proyecto era demostrar la capacidad de analizar un gran conjunto de datos y presentar los hallazgos de forma clara e interactiva utilizando una herramienta líder de Business Intelligence como Tableau. Se buscaba responder preguntas clave sobre la concentración de la oferta, la relación precio-superficie y el ranking de valor por comuna.</p>
+				<p>El objetivo de este proyecto es ilustrar los hallazgos de forma clara e interactiva al utilizar la herramienta de Tableau con el cual se busca responder preguntas relacionadas sobre la concentración de la oferta, la relación precio-superficie y el ranking de valor m² de diez comunas de la región metropolitana.</p>
 				
 				<h3>2. Proceso y Desafíos Técnicos</h3>
 				<ul>
-					<li><strong>Preparación de Datos:</strong> Se realizó una limpieza exhaustiva de más de 17,000 registros en Excel, corrigiendo errores de tipeo y unificando precios a UF para asegurar la calidad y consistencia de los datos.</li>
-					<li><strong>Desarrollo en Tableau:</strong> Se construyeron tres visualizaciones interconectadas (mapa, gráfico de dispersión y gráfico de barras) que se combinaron en un dashboard final. Se utilizaron filtros y acciones para permitir una exploración dinámica por parte del usuario.</li>
+					<li><strong>Preparación de Datos:</strong> Se realizó una limpieza  exhaustiva de más de 17.000 registros en Excel, eliminado valores incongruentes obteniendo más de 14.000 datos y unificando precios a UF, asegurando la calidad y consistencia de los datos.</li>
+					<li><strong>Desarrollo en Tableau:</strong> Se construyeron tres visualizaciones interconectados y se utilizaron filtros de numero de dormitorios, baños y comunas.</li>
 					<li><strong>Publicación:</strong> El dashboard final fue publicado en Tableau Public para generar un enlace compartible y un código de inserción para su integración en este portafolio.</li>
 				</ul>
 				
