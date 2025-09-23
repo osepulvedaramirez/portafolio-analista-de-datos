@@ -8,7 +8,7 @@
 
 		<!-- Estilos personalizados -->
 		<style>
-			/* Mejora la legibilidad del footer */
+			/* 1. Mejora la legibilidad del footer */
 			#footer .copyright,
 			#footer .icons a {
 				color: #ffffff;
@@ -20,13 +20,13 @@
 				opacity: 1;
 			}
 
-			/* Integra la foto de perfil con un borde y sombra sutil */
+			/* 2. Integra la foto de perfil con un borde y sombra sutil */
 			#header .avatar img {
 			  border: 3px solid #9eadb6;
 			  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 			}
 			
-			/* Estilo para los botones de "Ver Proyecto" */
+			/* 3. Estilo para los botones de "Ver Proyecto" */
 			.work-item .button {
 				display: inline-block;
 				background-color: #444;
@@ -43,6 +43,11 @@
 			.work-item .button:hover {
 				background-color: #007bff;
 				color: #fff;
+			}
+
+			/* 4. Contenedor para centrar el botón */
+			.button-wrapper {
+				text-align: center;
 			}
 		</style>
 	</head>
@@ -73,7 +78,9 @@
 						</a>
 						<h3>Dashboard de Arriendos en RM</h3>
 						<p>Análisis interactivo con Python, Dash y GeoPandas desplegado en Render.</p>
-						<a href="proyecto-arriendos.html" class="button">Ver Proyecto</a>
+						<div class="button-wrapper">
+							<a href="proyecto-arriendos.html" class="button">Ver Proyecto</a>
+						</div>
 					</article>
 
 					<!-- Proyecto 2 -->
@@ -83,7 +90,9 @@
 						</a>
 						<h3>Análisis de Venta de Departamentos RM</h3>
 						<p>Visualización en Tableau para el análisis de precios de venta de departamentos usados en la RM.</p>
-						<a href="proyecto-venta-rm.html" class="button">Ver Proyecto</a>
+						<div class="button-wrapper">
+							<a href="proyecto-venta-rm.html" class="button">Ver Proyecto</a>
+						</div>
 					</article>
 
 					<!-- Proyecto 3 -->
@@ -93,7 +102,9 @@
 						</a>
 						<h3>Precio Arriendo Departamentos Concepción</h3>
 						<p>Dashboard en Tableau para analizar la distribución de precios, m² y características en Concepción.</p>
-						<a href="proyecto-arriendo-concepcion.html" class="button">Ver Proyecto</a>
+						<div class="button-wrapper">
+							<a href="proyecto-arriendo-concepcion.html" class="button">Ver Proyecto</a>
+						</div>
 					</article>
 
 				</div>
