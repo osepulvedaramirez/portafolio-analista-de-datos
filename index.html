@@ -5,28 +5,49 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Estilos personalizados -->
+		<style>
+			/* Mejora la legibilidad del footer */
+			#footer .copyright,
+			#footer .icons a {
+				color: #ffffff;
+				opacity: 0.85;
+			}
+			#footer .copyright a:hover,
+			#footer .icons a:hover {
+				color: #ffffff;
+				opacity: 1;
+			}
+
+			/* Integra la foto de perfil con un borde y sombra sutil */
+			#header .avatar img {
+			  border: 3px solid #9eadb6;
+			  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<!-- LÍNEA CORREGIDA AQUÍ -->
 				<a href="index.html" class="image avatar"><img src="images/oscar-sepulveda.jpg" alt="Foto de Oscar Sepulveda" /></a>
 				<h1><strong>Soy Oscar Sepulveda</strong></h1>
 				<p>Analista de Datos | Entusiasta en Visualización y Business Intelligence.</p>
 			</div>
 		</header>
 
-		<!-- Main -->
+		<!-- Main Content -->
 		<div id="main">
 
-			<!-- Sección de Proyectos -->
+			<!-- Proyectos -->
 			<section id="one">
 				<h2>Portafolio de Proyectos</h2>
 				<div class="row">
-					
-					<!-- PROYECTO 1: DASHBOARD DE ARRIENDOS RM -->
+
+					<!-- Proyecto 1 -->
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="proyecto-arriendos.html" class="image fit">
 							<img src="images/thumbs/dashboard-arriendos.jpg" alt="Dashboard de Arriendos en RM" />
@@ -34,8 +55,8 @@
 						<h3>Dashboard de Arriendos en RM</h3>
 						<p>Análisis interactivo con Python, Dash y GeoPandas desplegado en Render.</p>
 					</article>
-					
-					<!-- PROYECTO 2: ANÁLISIS DE VENTA DE DEPARTAMENTOS RM -->
+
+					<!-- Proyecto 2 -->
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="proyecto-venta-rm.html" class="image fit">
 							<img src="images/thumbs/proyecto-venta-rm.jpg" alt="Análisis de Venta de Departamentos Usados RM" />
@@ -43,8 +64,8 @@
 						<h3>Análisis de Venta de Departamentos RM</h3>
 						<p>Visualización en Tableau para el análisis de precios de venta de departamentos usados en la RM.</p>
 					</article>
-					
-					<!-- PROYECTO 3: PRECIO ARRIENDO CONCEPCIÓN -->
+
+					<!-- Proyecto 3 -->
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="proyecto-arriendo-concepcion.html" class="image fit">
 							<img src="images/thumbs/proyecto-concepcion.jpg" alt="Análisis de Precios de Arriendo en Concepción" />
@@ -56,10 +77,10 @@
 				</div>
 			</section>
 
-			<!-- Sección de Contacto -->
+			<!-- Contacto -->
 			<section id="two">
 				<h2>Contacto</h2>
-				<p>¡Gracias por visitar mi portafolio! Si quieres colaborar o tienes alguna pregunta, no dudes en contactarme a través de los siguientes canales.</p>
+				<p>¡Gracias por visitar mi portafolio! Si quieres colaborar o tienes alguna pregunta, no dudes en contactarme.</p>
 				<div class="row">
 					<div class="col-8 col-12-small">
 						<ul class="labeled-icons">
